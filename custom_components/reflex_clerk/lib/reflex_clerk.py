@@ -98,7 +98,7 @@ def install_signup_page(app: rx.App, publishable_key=None, route="/signup", **pr
         publishable_key=publishable_key
     )
 
-    app.pages[route[1:] + "/[[...signup]]/index"] = signup_page
+    app._pages[route[1:] + "/[[...signup]]/index"] = signup_page
 
 
 def install_pages(
