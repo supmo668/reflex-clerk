@@ -50,7 +50,7 @@ def install_signin_page(app: rx.App, publishable_key=None, route="/signin", **pr
         publishable_key=publishable_key
     )
 
-    app.pages[route[1:] + "/[[...signin]]/index"] = signin_page
+    app._pages[route[1:] + "/[[...signin]]/index"] = signin_page
 
 
 def install_signup_page(app: rx.App, publishable_key=None, route="/signup", **props) -> None:
