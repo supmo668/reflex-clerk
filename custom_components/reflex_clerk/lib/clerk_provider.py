@@ -35,10 +35,9 @@ class ClerkState(rx.State):
         clerk.signed_in(
             rx.cond(
                 ClerkState.user.has_image,
-                rx.chakra.avatar(
+                rx.avatar(
                     src=ClerkState.user.image_url,
                     name=ClerkState.user.first_name,
-                    size="xl",
                 ),
             )
         )

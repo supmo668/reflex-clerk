@@ -77,7 +77,7 @@ clerk.clerk_provider(
     clerk.signed_in(  # (1) 
         rx.cond(
             clerk.ClerkState.user.has_image,  # (2)
-            rx.chakra.avatar(
+            rx.avatar(
                 src=clerk.ClerkState.user.image_url,  # (3)
                 name=clerk.ClerkState.user.first_name,
                 size="xl",

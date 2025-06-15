@@ -29,12 +29,10 @@ def index() -> rx.Component:
                 rx.vstack(
                     clerk.signed_in(
                         rx.cond(
-                            clerk.ClerkState.user.has_image,
-                            rx.chakra.avatar(
+                            rx.avatar(
                                 src=clerk.ClerkState.user.image_url,
                                 name=clerk.ClerkState.user.first_name,
-                                size="xl",
-                            ),
+                            )
                         )
                     ),
                     rx.heading("Welcome to Reflex!", size="9"),

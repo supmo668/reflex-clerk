@@ -354,28 +354,28 @@ class User(pydantic.BaseModel):
     external_id: Optional[str] = None
     """An optional external identifier for the user."""
 
-    primary_email_address_id: Optional[str] = None
+    primary_email_address_id: str
     """The unique identifier for the EmailAddress that the user has set as primary."""
 
-    primary_phone_number_id: Optional[str] = None
+    primary_phone_number_id: str
     """The unique identifier for the PhoneNumber that the user has set as primary."""
 
-    primary_web3_wallet_id: Optional[str] = None
+    primary_web3_wallet_id: str
     """The unique identifier for the Web3Wallet that the user signed up with."""
 
-    username: Optional[str] = None
+    username: str
     """The user's username."""
 
-    first_name: Optional[str] = None
+    first_name: str
     """The user's first name."""
 
-    last_name: Optional[str] = None
+    last_name: str
     """The user's last name."""
 
-    profile_image_url: Optional[str] = None
+    profile_image_url: str
     """Holds the default avatar or user's uploaded profile image. Compatible with Clerk's Image Optimization."""
 
-    image_url: Optional[str] = None
+    image_url: str
     """The URL of the user's profile image."""
 
     passkeys: Optional[List[PasskeyResource]] = None
