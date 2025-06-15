@@ -9,16 +9,16 @@ description = "Reflex custom component library for Clerk, a user management plat
 readme = "README.md"
 license = { text = "Apache-2.0" }
 requires-python = ">=3.8"
-authors = [{ name = "Elliot Kroo", email = "elliot@kroo.net" }]
+authors = [{ name = "Elliot Kroo", email = "elliot@kroo.net" }, { name = "Matt Mo", email = "supmo@pm.me" }]
 keywords = ["reflex","reflex-custom-components"]
 
-dependencies = ["reflex>=0.5.0"]
+dependencies = ["reflex>=0.7.0"]
 
 classifiers = ["Development Status :: 4 - Beta"]
 
 [project.urls]
-homepage = "https://kroo.github.io/reflex-clerk/"
-source = "https://github.com/kroo/reflex-clerk"
+homepage = "https://github.com/supmo668/reflex-clerk/"
+source = "https://github.com/supmo668/reflex-clerk/"
 
 [project.optional-dependencies]
 dev = ["build", "twine"]
